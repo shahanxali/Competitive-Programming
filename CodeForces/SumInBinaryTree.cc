@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int ans(int n){
+unsigned int ans(int n){
     
     unsigned long int a;
 
