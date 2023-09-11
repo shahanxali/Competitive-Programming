@@ -4,28 +4,25 @@
 #include <iostream>
 using namespace std;
 
-unsigned int ans(int n){
-    
-    unsigned long int a;
+long long int ans(long long int n) {
+    long long int a;
 
-    a = (n / 2);
+    a = n / 2;
 
-
-    if(n==1){
+    if (n == 1) {
         return 1;
     }
 
     return n + ans(a);
 }
 
-int main(){
+int main() {
     int t;
     cin >> t;
 
-    while (t--)
-    {
-        unsigned long int n;
+    while (t--) {
+        long long int n;
         cin >> n;
-        cout<<ans(n)<<endl;
+        cout << ans(n) << endl;
     }
 }
