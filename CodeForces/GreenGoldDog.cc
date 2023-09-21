@@ -1,5 +1,5 @@
 //Question: https://codeforces.com/contest/1867/problem/A
-//Level: 
+//Level: Div-4 A
 
 #include<iostream>
 #include<vector>
