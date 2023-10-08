@@ -4,24 +4,27 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main(){
+
+    //test cases
     int t;
     cin >> t;
 
-    while (t--)
-    {
+    while (t--){
+
         int n, y;
         cin >> n >> y;
+        
+        //idk why I didnt use vector, I was a noobie lol
         int a[n];
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++){
             cin >> a[i];
         }
-        int f = a[0];
-        for (int i = 1; i < n; i++)
-        {
 
+        int f = a[0];
+
+        //find or of all the elements in the array
+        for (int i = 1; i < n; i++){
             f = f | a[i];
         }
 

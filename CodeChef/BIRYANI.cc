@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+    //just the multiplication of two numbers
     int t, x, y;
     cin >> t;
     for (int i = 0; i < t; i++)
