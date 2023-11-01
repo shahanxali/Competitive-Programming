@@ -6,50 +6,30 @@
 
 using namespace std;
 
-int main(){
+
+int main()
+{   
 
     int t;
     cin>>t;
-    while(t--){
-
-        int n;
+    while(t--) {
+        int n,polycarp_strength,polycarp_endurance,weight,strength,endurance;
         cin>>n;
-        int ans;
-
-        vector<vector<int>> arr;
-        for(int i=0;i<n;i++){
-            vector<int> rows;
-            for(int i=0;i<2;i++){
-                int a;
-                cin>>a;
-                rows.push_back(a);
+ 
+        for(int i = 0; i < n ; i++) {
+            cin>>strength>>endurance;
+            if(i == 0) {
+                polycarp_strength = strength;
+                polycarp_endurance = endurance;
+                weight = strength;
             }
-            arr.push_back(rows);
-        }
-
-        vector<int> checklarge;
-        for(int i=0;i<n-1;i++){
-            if(arr[0][0]<=arr[i+1][0]){
-                if(arr[0][1]<=arr[i+1][1]){
-                    ans=-1;
-                    break;
+            else {
+                if(strength >= polycarp_strength and endurance >= polycarp_endurance) {
+                    weight = -1;
                 }
-                else{
-                    checklarge.push_back(arr[i+1][0]);
-                    checklarge.push_back(arr[i+1][1]);
-                }
-
             }
-
         }
-
-        if(ans!=-1){
-            ans=arr[0][0];
-        }
-        cout<<ans<<endl;
-
-
-
+        cout<<weight<<endl;
     }
-
-}
+    return 0;     
+ }
