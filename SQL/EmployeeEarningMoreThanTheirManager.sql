@@ -1,3 +1,6 @@
+--Question: https://leetcode.com/problems/employees-earning-more-than-their-managers/
+--Level: Easy
+
 # Write your MySQL query statement below
 
 SELECT Employee1.name AS Employee
