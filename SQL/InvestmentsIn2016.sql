@@ -1,0 +1,17 @@
+--Question: https://leetcode.com/problems/investments-in-2016/
+--Level: Medium 
+
+# Write your MySQL query statement below
+
+
+SELECT ROUND(SUM(tiv_2016),2) AS tiv_2016 FROM Insurance
+WHERE
+tiv_2015 IN (
+    SELECT tiv_2015 FROM Insurance
+    GROUP BY tiv_2015 HAVING COUNT(tiv_2015) > 1
+)
+AND
+(lat, lon) IN(
+    SELECT lat, lon FROM Insurance 
+    GROUP BY lat, lon HAVING COUNT(lat) = 1 AND COUNT(lon) = 1
+)
