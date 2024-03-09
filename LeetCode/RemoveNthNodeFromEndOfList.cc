@@ -31,6 +31,7 @@ public:
 
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         int size = csize(head);
+        
         int pos = size - n;
         
         if (pos == 0) {
