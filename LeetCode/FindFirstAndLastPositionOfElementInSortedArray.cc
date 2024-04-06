@@ -23,6 +23,7 @@ public:
         if (nums[start] != target) {
             return ans;
         } else {
+            
             ans[0] = start; 
         }
 
