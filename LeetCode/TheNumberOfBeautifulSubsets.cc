@@ -16,7 +16,6 @@ public:
         }
             
         if (rec[nums[pos] - k] == 0) {
-            
             rec[nums[pos]]++;
             
             recursion(pos + 1, n, tmp, nums, k);
