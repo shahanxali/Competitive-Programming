@@ -1,6 +1,9 @@
 //Question: https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/?envType=daily-question&envId=2024-05-27
 //Level: Easy
 
+
+//Recursive: (not that good)
+
 class Solution {
 public:
     int specialArray(vector<int>& nums) {
@@ -25,3 +28,5 @@ public:
         
     }
 };
+
+//Next Solution: 
