@@ -2,24 +2,22 @@
 //Level: Medium
 
 class MyCalendar {
-private:
-    std::vector<std::pair<int, int>> events;
-
 public:
-    MyCalendar() {
-    }
+
+    vector<pair<int, int>> store;
 
     bool book(int start, int end) {
-        // Iterate through the existing events to check for double booking
-        for (const auto& event : events) {
-            if (start < event.second && end > event.first) {
+
+        for(auto pair : store){
+            if(start < pair.second && end > pair.first){
                 return false;
             }
+
         }
 
-        // If no double booking found, add the new event and return true
-        events.push_back({start, end});
+        store.push_back({start, end});
         return true;
+
     }
 };
 
