@@ -1,5 +1,5 @@
 //Quesiton: https://codeforces.com/contest/2030/problem/A
-//Level: DIV - 2 (B)
+//Level: DIV - 2 (A)
 
 #include<iostream>
 #include<vector>
